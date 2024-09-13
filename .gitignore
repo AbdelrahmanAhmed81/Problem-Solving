@@ -1,0 +1,9 @@
+#vs code files
+/.vscode
+
+#build directory
+*/build
+
+#build files
+*.exe
+*.o
