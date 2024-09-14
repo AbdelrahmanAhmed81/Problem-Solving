@@ -7,7 +7,7 @@ BUILD_DIR = build
 TARGET = $(BUILD_DIR)/main.exe
 
 # Source files
-SRCS = main.cpp
+SRCS = main.cpp Solutions.cpp
 
 # Object files directory and object files
 OBJS = $(SRCS:%.cpp=$(BUILD_DIR)/%.o)
@@ -34,3 +34,5 @@ clean:
 # Run the executable
 run: $(TARGET)
 	./$(TARGET)
+
+start: clean all run
